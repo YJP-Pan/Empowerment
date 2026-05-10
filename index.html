@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FEMPOWER — 讓每位女性活出自己的力量</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;border-bottom:1px solid rgba(0,0,0,0.07);box-shadow:0 1px 12px rgba(0,0,0,0.05);">
+  <div class="container" style="height:64px;display:flex;align-items:center;justify-content:space-between;">
+
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/>
+        <path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/>
+        <path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.40"/>
+        <line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/>
+      </svg>
+      <span style="font-family:'Noto Sans TC',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.24em;color:#C07868;text-transform:uppercase;">FEMPOWER</span>
+    </a>
+
+    <div style="display:flex;align-items:center;gap:2rem;">
+      <a href="/about/"        class="nav-link">關於我們</a>
+      <a href="/programs/"     class="nav-link">課程方案</a>
+      <a href="/instructors/"  class="nav-link">講師陣容</a>
+      <a href="/testimonials/" class="nav-link">學員心得</a>
+      <a href="/partners/"     class="nav-link">合作夥伴</a>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <a href="#" class="nav-link" style="font-size:.82rem;">登入</a>
+      <a href="#join" class="btn-p" style="padding:.6rem 1.5rem;font-size:.82rem;">
+        立即加入
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="position:relative;min-height:100vh;display:flex;align-items:center;padding-top:64px;overflow:hidden;">
+
+  <div style="position:absolute;inset:0;background:#FDF5F0;"></div>
+
+  <div class="gblob gb1" style="width:520px;height:520px;top:8%;right:-2%;background:rgba(210,130,108,0.26);"></div>
+  <div class="gblob gb2" style="width:480px;height:480px;top:28%;right:20%;background:rgba(240,185,165,0.22);"></div>
+  <div class="gblob gb3" style="width:440px;height:440px;bottom:6%;left:12%;background:rgba(195,105,88,0.20);"></div>
+  <div class="gblob gb4" style="width:400px;height:400px;top:8%;left:-2%;background:rgba(240,200,185,0.22);"></div>
+  <div class="gblob gb5" style="width:500px;height:500px;top:42%;left:28%;background:rgba(228,165,145,0.18);"></div>
+  <div class="gblob gb6" style="width:360px;height:360px;bottom:8%;right:10%;background:rgba(200,120,100,0.16);"></div>
+
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;padding-top:4rem;padding-bottom:4rem;width:100%;position:relative;z-index:1;">
+
+    <!-- LEFT -->
+    <div>
+      <div class="hero-anim-0" style="margin-bottom:2rem;">
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;background:rgba(255,255,255,0.75);border:1px solid rgba(192,120,104,0.18);box-shadow:0 2px 8px rgba(192,120,104,0.08);">
+          <span class="hero-dot-beat" style="width:6px;height:6px;border-radius:50%;background:#C07868;display:inline-block;flex-shrink:0;box-shadow:0 0 0 3px rgba(192,120,104,0.18);"></span>
+          <span style="font-family:'Noto Sans TC',sans-serif;font-size:.72rem;color:#C07868;letter-spacing:.05em;font-weight:400;">女性力量的起點</span>
+        </div>
+      </div>
+
+      <h1 class="hero-anim-1 hd" style="font-size:clamp(3rem,5.5vw,4.75rem);color:#1A1814;margin-bottom:1.5rem;">
+        讓每位女性<br>
+        <em class="shimmer-text" style="font-style:italic;color:#C07868;">活出自己</em><br>
+        的力量
+      </h1>
+
+      <p class="hero-anim-2" style="font-family:'Noto Sans TC',sans-serif;font-size:1rem;font-weight:300;color:#6B6050;line-height:1.85;max-width:26rem;margin-bottom:2.5rem;">
+        透過實戰課程、社群支持與導師陪伴，協助妳實現<br>
+        <strong style="font-weight:500;color:#2A1E18;">經濟獨立</strong>、<strong style="font-weight:500;color:#2A1E18;">思想自主</strong>與<strong style="font-weight:500;color:#2A1E18;">行動自信</strong>。
+      </p>
+
+      <div class="hero-anim-3" style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:3.25rem;">
+        <a href="/programs/" class="btn-p">
+          探索課程
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/about/" class="btn-outline">了解更多</a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-anim-4 hero-stats card" style="display:inline-flex;gap:0;border-radius:1.25rem;overflow:hidden;">
+        <div style="padding:1.25rem 2rem;border-right:1px solid rgba(0,0,0,0.07);">
+          <div class="hd" style="font-size:2rem;color:#C07868;"><span data-count="5000">5,000</span><span style="font-size:1rem;">+</span></div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;margin-top:2px;">畢業學員</div>
+        </div>
+        <div style="padding:1.25rem 2rem;border-right:1px solid rgba(0,0,0,0.07);">
+          <div class="hd" style="font-size:2rem;color:#C07868;"><span data-count="40">40</span><span style="font-size:1rem;">+</span></div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;margin-top:2px;">精選課程</div>
+        </div>
+        <div style="padding:1.25rem 2rem;">
+          <div class="hd" style="font-size:2rem;color:#C07868;"><span data-count="60">60</span><span style="font-size:1rem;">+</span></div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;margin-top:2px;">品牌夥伴</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-anim-img" style="position:relative;display:flex;justify-content:center;align-items:center;">
+      <div class="hero-img-float" style="position:relative;width:100%;max-width:520px;">
+
+        <div style="border-radius:2rem;overflow:hidden;width:100%;aspect-ratio:4/3;position:relative;
+                    box-shadow:0 28px 72px -10px rgba(192,120,104,0.32),0 8px 24px -4px rgba(0,0,0,0.10);">
+          <img src="/brand_assets/hero_img_2.png" alt="女力覺醒"
+               style="width:100%;height:100%;object-fit:cover;object-position:center 18%;">
+          <div style="position:absolute;inset:0;background:rgba(180,90,70,0.10);mix-blend-mode:multiply;pointer-events:none;"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:55%;background:linear-gradient(to top,rgba(20,14,10,0.42) 0%,rgba(20,14,10,0.10) 55%,transparent 100%);pointer-events:none;"></div>
+        </div>
+
+        <div style="position:absolute;left:-48px;bottom:-20px;">
+        <div class="hero-card-float-l card" style="border-radius:18px;padding:16px 20px;min-width:186px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(192,120,104,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1L9.8 5.6H15L11 8.8l1.5 5.2L8 11.2 3.5 14l1.5-5.2L1 5.6h5.2L8 1z" fill="#C07868"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-family:'Noto Sans TC',sans-serif;font-size:.72rem;font-weight:500;color:#1A1814;">課程評分</div>
+              <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;color:#8E8070;">學員滿意度</div>
+            </div>
+          </div>
+          <div class="hd" style="font-size:1.75rem;color:#C07868;">4.9 <span style="font-size:.88rem;color:#8E8070;">/ 5.0</span></div>
+        </div>
+        </div>
+
+        <div style="position:absolute;right:-40px;top:50%;transform:translateY(-50%);">
+        <div class="hero-card-float-r card" style="border-radius:18px;padding:15px 20px;min-width:168px;">
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;color:#8E8070;margin-bottom:8px;">本月新增學員</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div style="display:flex;">
+              <div style="width:26px;height:26px;border-radius:50%;background:rgba(192,120,104,0.2);border:2.5px solid white;margin-right:-8px;"></div>
+              <div style="width:26px;height:26px;border-radius:50%;background:rgba(192,120,104,0.15);border:2.5px solid white;margin-right:-8px;"></div>
+              <div style="width:26px;height:26px;border-radius:50%;background:rgba(192,120,104,0.25);border:2.5px solid white;"></div>
+            </div>
+            <div class="hd" style="font-size:1.5rem;color:#1A1814;margin-left:4px;">+328</div>
+          </div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;color:#8E8070;margin-top:4px;">位新成員加入</div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MISSION -->
+<section id="mission" class="section" style="background:#FEFCFB;">
+  <div class="container">
+
+    <div style="text-align:center;margin-bottom:5rem;">
+      <div class="reveal" style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">Our Philosophy</div>
+      <div class="divider reveal r1" style="margin:0 auto 1.5rem;"></div>
+      <h2 class="reveal r1 hd" style="font-size:clamp(2.25rem,4vw,3.25rem);color:#1A1814;margin-bottom:1.25rem;">三大核心價值</h2>
+      <p class="reveal r2" style="max-width:36rem;margin:0 auto;font-family:'Noto Sans TC',sans-serif;font-size:.95rem;font-weight:300;color:#6B6050;line-height:1.85;">
+        真正的自由來自三個層面的獨立。FEMPOWER 的課程與社群，圍繞這三大核心設計。
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;">
+
+      <div class="reveal card card-h" style="border-radius:1.75rem;padding:2.5rem;">
+        <div style="width:54px;height:54px;border-radius:15px;background:rgba(192,120,104,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <circle cx="13" cy="13" r="8" fill="rgba(192,120,104,0.15)" stroke="#C07868" stroke-width="2"/>
+            <path d="M13 8v2m0 6v2M8 13h2m6 0h2" stroke="#C07868" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#B07868;margin-bottom:.7rem;">Economic Independence</div>
+        <h3 class="hd" style="font-size:1.65rem;color:#1A1814;margin-bottom:.9rem;">經濟獨立</h3>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.87rem;font-weight:300;color:#6B6050;line-height:1.85;">掌握財務知識、創業技能與職涯策略，打造屬於自己的經濟基礎。不依賴，不將就，真正擁有選擇的能力。</p>
+        <a href="/programs/" style="display:inline-flex;align-items:center;gap:6px;margin-top:2rem;font-family:'Noto Sans TC',sans-serif;font-size:.84rem;font-weight:500;color:#C07868;text-decoration:none;">
+          探索相關課程
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="reveal r1 card card-h" style="border-radius:1.75rem;padding:2.5rem;">
+        <div style="width:54px;height:54px;border-radius:15px;background:rgba(192,120,104,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M13 4C9.13 4 6 7.13 6 11c0 2.4 1.17 4.53 2.97 5.87V19h8.06v-2.13A7 7 0 0020 11c0-3.87-3.13-7-7-7z"
+                  fill="rgba(192,120,104,0.12)" stroke="#C07868" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 19h6v1.5a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5V19z" fill="#C07868" opacity="0.5"/>
+          </svg>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#B07868;margin-bottom:.7rem;">Intellectual Autonomy</div>
+        <h3 class="hd" style="font-size:1.65rem;color:#1A1814;margin-bottom:.9rem;">思想自主</h3>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.87rem;font-weight:300;color:#6B6050;line-height:1.85;">建立批判性思維，突破社會加諸於女性的框架。學習清晰表達觀點，以智識力量影響世界。</p>
+        <a href="/programs/" style="display:inline-flex;align-items:center;gap:6px;margin-top:2rem;font-family:'Noto Sans TC',sans-serif;font-size:.84rem;font-weight:500;color:#C07868;text-decoration:none;">
+          探索相關課程
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="reveal r2 card card-h" style="border-radius:1.75rem;padding:2.5rem;">
+        <div style="width:54px;height:54px;border-radius:15px;background:rgba(192,120,104,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M13 3L5 12h6v11h4V12h6L13 3z" fill="rgba(192,120,104,0.12)" stroke="#C07868" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#B07868;margin-bottom:.7rem;">Action Confidence</div>
+        <h3 class="hd" style="font-size:1.65rem;color:#1A1814;margin-bottom:.9rem;">行動自信</h3>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.87rem;font-weight:300;color:#6B6050;line-height:1.85;">將夢想化為具體計畫，勇敢踏出第一步。透過行動驗證自我價值，建立屬於自己的人生敘事。</p>
+        <a href="/programs/" style="display:inline-flex;align-items:center;gap:6px;margin-top:2rem;font-family:'Noto Sans TC',sans-serif;font-size:.84rem;font-weight:500;color:#C07868;text-decoration:none;">
+          探索相關課程
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROGRAMS -->
+<section id="programs" class="section" style="background:#FAF2EE;">
+  <div class="container">
+
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:4rem;flex-wrap:wrap;gap:1.5rem;">
+      <div>
+        <div class="reveal" style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">Our Programs</div>
+        <div class="divider reveal r1" style="margin-bottom:1.25rem;"></div>
+        <h2 class="reveal r1 hd" style="font-size:clamp(2.25rem,4vw,3.25rem);color:#1A1814;">精選課程方案</h2>
+      </div>
+      <a href="/programs/" class="reveal" style="display:flex;align-items:center;gap:6px;font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:500;color:#C07868;text-decoration:none;">
+        瀏覽全部課程
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;">
+
+      <article class="reveal card card-h group" style="border-radius:1.75rem;overflow:hidden;">
+        <div style="position:relative;height:215px;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=430&fit=crop&q=80" alt="女性理財覺醒" class="img-z" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,24,20,0.55) 0%,transparent 55%);"></div>
+          <span style="position:absolute;top:14px;left:14px;background:rgba(192,120,104,0.9);color:white;font-family:'Noto Sans TC',sans-serif;font-size:.7rem;font-weight:500;padding:4px 12px;border-radius:20px;">熱門課程</span>
+        </div>
+        <div style="padding:1.75rem;">
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#B07868;letter-spacing:.05em;margin-bottom:.6rem;">理財 · 創業</div>
+          <h3 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:.7rem;">女性理財覺醒課程</h3>
+          <p style="font-family:'Noto Sans TC',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;line-height:1.8;margin-bottom:1rem;">8 週線上課程，從個人財務規劃、ETF 投資到建立多元被動收入，系統性幫助妳打造穩健的財富基礎。</p>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">12 個模組</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">每週直播</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">終身社群</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.07);">
+            <div>
+              <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#8E8070;margin-bottom:2px;">課程費用</div>
+              <div class="hd" style="font-size:1.6rem;color:#C07868;">NT$4,800</div>
+            </div>
+            <a href="#" class="btn-p" style="padding:.55rem 1.2rem;font-size:.78rem;">立即報名</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="reveal r1 card card-h group" style="border-radius:1.75rem;overflow:hidden;">
+        <div style="position:relative;height:215px;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=430&fit=crop&q=80" alt="女性領導力" class="img-z" style="width:100%;height:100%;object-fit:cover;object-position:center 25%;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,24,20,0.55) 0%,transparent 55%);"></div>
+        </div>
+        <div style="padding:1.75rem;">
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#B07868;letter-spacing:.05em;margin-bottom:.6rem;">領導力 · 職涯</div>
+          <h3 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:.7rem;">女性領導力養成計畫</h3>
+          <p style="font-family:'Noto Sans TC',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;line-height:1.8;margin-bottom:1rem;">12 週深度培訓，涵蓋職場溝通、跨部門協作、向上管理與個人品牌，助妳突破職場玻璃天花板。</p>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">16 個模組</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">案例演練</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">導師 1 對 1</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.07);">
+            <div>
+              <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#8E8070;margin-bottom:2px;">課程費用</div>
+              <div class="hd" style="font-size:1.6rem;color:#C07868;">NT$6,200</div>
+            </div>
+            <a href="#" class="btn-p" style="padding:.55rem 1.2rem;font-size:.78rem;">立即報名</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="reveal r2 card card-h group" style="border-radius:1.75rem;overflow:hidden;">
+        <div style="position:relative;height:215px;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=430&fit=crop&q=80" alt="內在力量工作坊" class="img-z" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(26,24,20,0.55) 0%,transparent 55%);"></div>
+          <span style="position:absolute;top:14px;left:14px;background:rgba(60,50,30,0.82);color:white;font-family:'Noto Sans TC',sans-serif;font-size:.7rem;font-weight:500;padding:4px 12px;border-radius:20px;">新課程</span>
+        </div>
+        <div style="padding:1.75rem;">
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#B07868;letter-spacing:.05em;margin-bottom:.6rem;">心理 · 自我成長</div>
+          <h3 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:.7rem;">內在力量覺醒工作坊</h3>
+          <p style="font-family:'Noto Sans TC',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;line-height:1.8;margin-bottom:1rem;">密集 2 日線下工作坊，透過情緒釋放、深度自我探索與心理師陪伴，打破長期阻礙妳前進的信念系統。</p>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem;">
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">2 日密集</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">小班 12 人</span>
+            <span style="font-size:.7rem;color:#8E8070;background:rgba(0,0,0,0.04);padding:3px 10px;border-radius:20px;font-family:'Noto Sans TC',sans-serif;">心理師陪伴</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.07);">
+            <div>
+              <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#8E8070;margin-bottom:2px;">課程費用</div>
+              <div class="hd" style="font-size:1.6rem;color:#C07868;">NT$3,600</div>
+            </div>
+            <a href="#" class="btn-p" style="padding:.55rem 1.2rem;font-size:.78rem;">立即報名</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- INSTRUCTORS -->
+<section id="instructors" class="section" style="background:#FEFCFB;">
+  <div class="container">
+
+    <div style="text-align:center;margin-bottom:5rem;">
+      <div class="reveal" style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">Our Instructors</div>
+      <div class="divider reveal r1" style="margin:0 auto 1.5rem;"></div>
+      <h2 class="reveal r1 hd" style="font-size:clamp(2.25rem,4vw,3.25rem);color:#1A1814;margin-bottom:1rem;">與頂尖導師同行</h2>
+      <p class="reveal r2" style="max-width:32rem;margin:0 auto;font-family:'Noto Sans TC',sans-serif;font-size:.95rem;font-weight:300;color:#6B6050;line-height:1.85;">每位導師都是各領域的傑出女性，以親身經歷陪伴妳走過轉變之路。</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;">
+
+      <div class="reveal" style="text-align:center;">
+        <div style="position:relative;width:164px;height:164px;margin:0 auto 1.5rem;">
+          <div style="width:100%;height:100%;border-radius:50%;overflow:hidden;border:3px solid rgba(192,120,104,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=faces&q=80" alt="陳雅婷" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="position:absolute;bottom:-4px;right:-4px;width:36px;height:36px;border-radius:50%;background:#C07868;display:flex;align-items:center;justify-content:center;border:2px solid white;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.5 3.5L5 10l-2.5-2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;color:#B07868;margin-bottom:5px;text-transform:uppercase;">Finance</div>
+        <h4 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:4px;">陳雅婷</h4>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.8rem;color:#8E8070;margin-bottom:.75rem;">財務規劃 · 創業導師</p>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.78rem;font-weight:300;color:#6B6050;line-height:1.7;">前高盛亞洲投資顧問，現任財務自由教練，已協助 500+ 女性建立被動收入系統。</p>
+      </div>
+
+      <div class="reveal r1" style="text-align:center;">
+        <div style="position:relative;width:164px;height:164px;margin:0 auto 1.5rem;">
+          <div style="width:100%;height:100%;border-radius:50%;overflow:hidden;border:3px solid rgba(192,120,104,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=faces&q=80" alt="林佳穎" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="position:absolute;bottom:-4px;right:-4px;width:36px;height:36px;border-radius:50%;background:#C07868;display:flex;align-items:center;justify-content:center;border:2px solid white;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.5 3.5L5 10l-2.5-2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;color:#B07868;margin-bottom:5px;text-transform:uppercase;">Leadership</div>
+        <h4 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:4px;">林佳穎</h4>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.8rem;color:#8E8070;margin-bottom:.75rem;">領導力 · 職涯教練</p>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.78rem;font-weight:300;color:#6B6050;line-height:1.7;">15 年跨國企業人資總監，專注女性職涯加速，學員晉升率超過 70%。</p>
+      </div>
+
+      <div class="reveal r2" style="text-align:center;">
+        <div style="position:relative;width:164px;height:164px;margin:0 auto 1.5rem;">
+          <div style="width:100%;height:100%;border-radius:50%;overflow:hidden;border:3px solid rgba(192,120,104,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces&q=80" alt="黃心怡" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="position:absolute;bottom:-4px;right:-4px;width:36px;height:36px;border-radius:50%;background:#C07868;display:flex;align-items:center;justify-content:center;border:2px solid white;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.5 3.5L5 10l-2.5-2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;color:#B07868;margin-bottom:5px;text-transform:uppercase;">Psychology</div>
+        <h4 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:4px;">黃心怡</h4>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.8rem;color:#8E8070;margin-bottom:.75rem;">心理諮詢 · 內在成長</p>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.78rem;font-weight:300;color:#6B6050;line-height:1.7;">臨床心理師，TED 講者，深耕女性身心整合超過十年，陪伴 2,000+ 學員重建自我。</p>
+      </div>
+
+      <div class="reveal r3" style="text-align:center;">
+        <div style="position:relative;width:164px;height:164px;margin:0 auto 1.5rem;">
+          <div style="width:100%;height:100%;border-radius:50%;overflow:hidden;border:3px solid rgba(192,120,104,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=400&h=400&fit=crop&crop=faces&q=80" alt="吳怡君" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="position:absolute;bottom:-4px;right:-4px;width:36px;height:36px;border-radius:50%;background:#C07868;display:flex;align-items:center;justify-content:center;border:2px solid white;">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11.5 3.5L5 10l-2.5-2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.1em;color:#B07868;margin-bottom:5px;text-transform:uppercase;">Marketing</div>
+        <h4 class="hd" style="font-size:1.3rem;color:#1A1814;margin-bottom:4px;">吳怡君</h4>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.8rem;color:#8E8070;margin-bottom:.75rem;">品牌行銷 · 個人品牌</p>
+        <p style="font-family:'Noto Sans TC',sans-serif;font-size:.78rem;font-weight:300;color:#6B6050;line-height:1.7;">亞洲頂尖個人品牌策略師，協助百位女性創業家打造具市場影響力的品牌故事。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section" style="background:#FAF2EE;">
+  <div class="container">
+
+    <div style="text-align:center;margin-bottom:5rem;">
+      <div class="reveal" style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">Testimonials</div>
+      <div class="divider reveal r1" style="margin:0 auto 1.5rem;"></div>
+      <h2 class="reveal r1 hd" style="font-size:clamp(2.25rem,4vw,3.25rem);color:#1A1814;">她們的故事</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;">
+
+      <div class="reveal card" style="border-radius:1.75rem;padding:2rem;display:flex;flex-direction:column;">
+        <div style="display:flex;gap:3px;margin-bottom:1rem;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+        </div>
+        <div class="qmark" style="margin-bottom:.5rem;">"</div>
+        <blockquote style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:300;color:#2A1E18;line-height:1.85;flex:1;margin-bottom:2rem;">
+          加入理財覺醒課程之前，我連記帳都沒有習慣。現在每個月穩定存下 30% 收入，還有一筆 ETF 組合在默默成長。這堂課改變的不只是金錢，是我對自己的整個看法。
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(192,120,104,0.2);">
+            <img src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=200&h=200&fit=crop&crop=faces&q=80" alt="許文慧" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:500;color:#1A1814;">許文慧</div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;">自由接案設計師 · 2024 學員</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal r1 card" style="border-radius:1.75rem;padding:2rem;display:flex;flex-direction:column;">
+        <div style="display:flex;gap:3px;margin-bottom:1rem;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+        </div>
+        <div class="qmark" style="margin-bottom:.5rem;">"</div>
+        <blockquote style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:300;color:#2A1E18;line-height:1.85;flex:1;margin-bottom:2rem;">
+          我在同一個職位待了六年，總覺得「再努力一點就會被看見」。林導師教會我換個角度主動展現，三個月後我拿到晉升主管的機會。那一刻真的哭了。
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(192,120,104,0.2);">
+            <img src="https://images.unsplash.com/photo-1513097847666-1c3b85c5e9de?w=200&h=200&fit=crop&crop=faces&q=80" alt="劉品萱" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:500;color:#1A1814;">劉品萱</div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;">科技業產品主管 · 2024 學員</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal r2 card" style="border-radius:1.75rem;padding:2rem;display:flex;flex-direction:column;">
+        <div style="display:flex;gap:3px;margin-bottom:1rem;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C07868"><path d="M7 1l1.6 3.9H13l-3.5 2.8 1.3 4.3L7 9.4l-3.8 2.6L4.5 7.7 1 4.9h4.4L7 1z"/></svg>
+        </div>
+        <div class="qmark" style="margin-bottom:.5rem;">"</div>
+        <blockquote style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:300;color:#2A1E18;line-height:1.85;flex:1;margin-bottom:2rem;">
+          工作坊的第二天下午，我突然理解了一個困擾我十年的信念從哪來。那種鬆動的感覺無法形容。現在我創業了，每天早上醒來都覺得這是我想要的人生。
+        </blockquote>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(192,120,104,0.2);">
+            <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=200&h=200&fit=crop&crop=faces&q=80" alt="蔡雨珊" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.88rem;font-weight:500;color:#1A1814;">蔡雨珊</div>
+            <div style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;color:#8E8070;">永續品牌創辦人 · 2025 學員</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PARTNERS -->
+<section id="partners" style="padding:5.5rem 0;background:#fff;">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <p style="font-family:'Noto Sans TC',sans-serif;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#8E8070;">信任我們的合作夥伴</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem;align-items:center;">
+      <div class="reveal p-tile card" style="display:flex;align-items:center;justify-content:center;padding:1.25rem 1.5rem;border-radius:14px;">
+        <img src="https://placehold.co/128x34/E8E0D0/6B5A30?text=Partner+A" alt="夥伴 A" style="height:26px;object-fit:contain;opacity:0.6;">
+      </div>
+      <div class="reveal r1 p-tile card" style="display:flex;align-items:center;justify-content:center;padding:1.25rem 1.5rem;border-radius:14px;">
+        <img src="https://placehold.co/128x34/E0D8C8/6B5A30?text=Partner+B" alt="夥伴 B" style="height:26px;object-fit:contain;opacity:0.6;">
+      </div>
+      <div class="reveal r2 p-tile card" style="display:flex;align-items:center;justify-content:center;padding:1.25rem 1.5rem;border-radius:14px;">
+        <img src="https://placehold.co/128x34/D8D0B8/6B5A30?text=Partner+C" alt="夥伴 C" style="height:26px;object-fit:contain;opacity:0.6;">
+      </div>
+      <div class="reveal r3 p-tile card" style="display:flex;align-items:center;justify-content:center;padding:1.25rem 1.5rem;border-radius:14px;">
+        <img src="https://placehold.co/128x34/E8E0D0/6B5A30?text=Partner+D" alt="夥伴 D" style="height:26px;object-fit:contain;opacity:0.6;">
+      </div>
+      <div class="reveal r4 p-tile card" style="display:flex;align-items:center;justify-content:center;padding:1.25rem 1.5rem;border-radius:14px;">
+        <img src="https://placehold.co/128x34/E0D8C8/6B5A30?text=Partner+E" alt="夥伴 E" style="height:26px;object-fit:contain;opacity:0.6;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section id="join" style="position:relative;padding:10rem 0;overflow:hidden;background:#FDF5F0;">
+  <div style="position:absolute;inset:0;background:#FDF5F0;"></div>
+  <div class="gblob gb1" style="width:600px;height:600px;top:-10%;left:-8%;background:rgba(210,140,118,0.22);"></div>
+  <div class="gblob gb3" style="width:500px;height:500px;bottom:-15%;right:-5%;background:rgba(230,160,135,0.20);"></div>
+  <div class="gblob gb5" style="width:420px;height:420px;top:20%;right:15%;background:rgba(245,195,170,0.18);"></div>
+
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:480px;height:480px;border-radius:50%;border:1px solid rgba(192,120,104,0.10);pointer-events:none;"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:680px;height:680px;border-radius:50%;border:1px solid rgba(192,120,104,0.06);pointer-events:none;"></div>
+
+  <div style="position:relative;max-width:680px;margin:0 auto;padding:0 5rem;text-align:center;">
+    <div class="reveal" style="display:inline-flex;align-items:center;gap:8px;padding:5px 16px;border-radius:100px;background:rgba(255,255,255,0.75);border:1px solid rgba(192,120,104,0.18);margin-bottom:2rem;">
+      <span style="width:5px;height:5px;border-radius:50%;background:#C07868;display:inline-block;"></span>
+      <span style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:#C07868;letter-spacing:.08em;">Join Us Today</span>
+    </div>
+
+    <h2 class="reveal r1 hd" style="font-size:clamp(2.75rem,5.5vw,4.5rem);color:#1A1814;margin-bottom:1.75rem;line-height:1.1;">
+      妳的覺醒之旅<br>
+      <em style="color:#C07868;font-style:italic;">從今天開始</em>
+    </h2>
+
+    <p class="reveal r2" style="font-family:'Noto Sans TC',sans-serif;font-size:.97rem;font-weight:300;color:#6B6050;line-height:1.85;max-width:36rem;margin:0 auto 3rem;">
+      加入超過 5,000 位女性的成長社群，現在加入享早鳥優惠，並獲得一次免費導師諮詢。
+    </p>
+
+    <div class="reveal r3" style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+      <a href="#" class="btn-p">
+        立即免費加入
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" class="btn-outline">了解會員方案</a>
+    </div>
+
+    <div class="reveal r4" style="margin-top:3.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;">
+      <div style="display:flex;">
+        <div style="width:30px;height:30px;border-radius:50%;background:rgba(192,120,104,0.20);border:2px solid #FDF5F0;margin-right:-8px;"></div>
+        <div style="width:30px;height:30px;border-radius:50%;background:rgba(192,120,104,0.30);border:2px solid #FDF5F0;margin-right:-8px;"></div>
+        <div style="width:30px;height:30px;border-radius:50%;background:rgba(192,120,104,0.25);border:2px solid #FDF5F0;"></div>
+      </div>
+      <p style="font-family:'Noto Sans TC',sans-serif;font-size:.82rem;color:#8E8070;">已有 <strong style="color:#C07868;font-weight:500;">5,000+</strong> 位女性加入社群</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer style="background:#fff;font-family:'Noto Sans TC',sans-serif;border-top:1px solid rgba(192,120,104,0.12);">
+  <div class="container" style="padding-top:5rem;padding-bottom:2.5rem;">
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:4rem;">
+
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/>
+            <path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/>
+            <path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.38"/>
+            <line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/>
+          </svg>
+          <span style="font-size:.7rem;font-weight:500;letter-spacing:.24em;color:#C07868;text-transform:uppercase;">FEMPOWER</span>
+        </div>
+        <p style="font-size:.875rem;font-weight:300;color:#6B6050;line-height:1.85;max-width:22rem;margin-bottom:2rem;">
+          讓每位女性活出自己的力量。透過實戰課程、社群支持與導師陪伴，陪伴妳實現經濟獨立、思想自主與行動自信。
+        </p>
+        <div style="display:flex;gap:.625rem;">
+          <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(192,120,104,0.10);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;" onmouseover="this.style.background='rgba(192,120,104,0.22)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(192,120,104,0.10)';this.style.transform='translateY(0)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C07868"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(192,120,104,0.10);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;" onmouseover="this.style.background='rgba(192,120,104,0.22)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(192,120,104,0.10)';this.style.transform='translateY(0)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C07868"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(192,120,104,0.10);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;" onmouseover="this.style.background='rgba(192,120,104,0.22)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(192,120,104,0.10)';this.style.transform='translateY(0)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C07868"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">課程與服務</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-size:.855rem;font-weight:300;">
+          <li><a href="/programs/" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">所有課程</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">工作坊活動</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">一對一諮詢</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">企業合作</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">關於我們</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-size:.855rem;font-weight:300;">
+          <li><a href="/about/" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">品牌故事</a></li>
+          <li><a href="/instructors/" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">導師陣容</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">媒體報導</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">聯絡我們</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(192,120,104,0.20),transparent);margin-bottom:2rem;"></div>
+
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;font-size:.77rem;font-weight:300;color:#8E8070;">
+      <p>© 2025 FEMPOWER. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="#" style="color:#8E8070;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#8E8070'">隱私政策</a>
+        <a href="#" style="color:#8E8070;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#8E8070'">服務條款</a>
+        <a href="#" style="color:#8E8070;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#8E8070'">Cookie</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(
+  es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+);
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+function countUp(el, target, dur) {
+  const t0 = performance.now();
+  (function tick(now) {
+    const p = Math.min((now - t0) / dur, 1);
+    el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target).toLocaleString();
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+const statsEl = document.querySelector('.hero-stats');
+if (statsEl) {
+  new IntersectionObserver(([entry], ob) => {
+    if (!entry.isIntersecting) return;
+    statsEl.querySelectorAll('[data-count]').forEach(el => countUp(el, +el.dataset.count, 1600));
+    ob.disconnect();
+  }, { threshold: 0.4 }).observe(statsEl);
+}
+</script>
+</body>
+</html>
