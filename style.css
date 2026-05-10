@@ -194,3 +194,70 @@ body {
 .hero-card-float-r { animation: cardFloat 5.5s ease-in-out infinite 2.4s; }
 .hero-dot-beat     { animation: dotBeat   2.2s ease-in-out infinite; }
 .shimmer-text      { animation: shimmerGlow 4s ease-in-out infinite 1.2s; }
+
+/* ── RWD ── */
+@media (max-width: 1024px) {
+  .container { padding: 0 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1.75rem; }
+  .section   { padding: 5rem 0; }
+
+  /* 3-col → 2-col */
+  [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
+  /* 4-col → 2-col */
+  [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
+  /* 5-col → 3-col */
+  [style*="grid-template-columns:repeat(5,1fr)"] { grid-template-columns: repeat(3,1fr) !important; }
+  /* Footer 3-col → 2-col */
+  [style*="grid-template-columns:2fr 1fr 1fr"]   { grid-template-columns: 1fr 1fr !important; }
+}
+
+@media (max-width: 640px) {
+  .container { padding: 0 1.25rem; }
+  .section   { padding: 3.5rem 0; }
+
+  /* ── Nav ── */
+  .nav-desktop { display: none !important; }
+
+  /* ── Hero ── */
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .hero-img-col { display: none !important; }
+  .hero-card-float-l,
+  .hero-card-float-r { display: none !important; }
+  /* Stats: 3 items in one compact row */
+  .hero-stats { width: 100% !important; }
+  .hero-stats > div {
+    padding: 1rem 1.25rem !important;
+    flex: 1 1 0 !important;
+  }
+
+  /* ── Content grids → 1 col ── */
+  [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:repeat(5,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
+
+  /* ── Footer & CTA grids → 1 col ── */
+  [style*="grid-template-columns:2fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+
+  /* ── Split CTA blocks (partners + programs) ── */
+  .cta-split {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 2rem !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+  }
+  .cta-split .btn-p { align-self: center !important; }
+
+  /* ── Instructor horizontal card → stack ── */
+  [style*="grid-template-columns:auto 1fr"] { grid-template-columns: 1fr !important; }
+
+  /* ── Large inner paddings → reduce ── */
+  [style*="padding:4rem"] { padding: 2rem !important; }
+  [style*="padding:3rem"] { padding: 1.75rem !important; }
+
+  /* ── Page hero ── */
+  .page-hero { padding: 2.5rem 0 2rem !important; }
+  .page-hero h1 { font-size: clamp(2rem,8vw,2.75rem) !important; }
+}
