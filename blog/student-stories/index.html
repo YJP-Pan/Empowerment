@@ -59,9 +59,40 @@
         立即加入
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
+      <button id="nav-toggle" class="nav-hamburger" aria-label="開啟選單"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="行動版選單">
+  <div class="mobile-menu-drawer">
+    <button class="mobile-menu-close" id="nav-close" aria-label="關閉選單">&#x2715;</button>
+    <nav class="mobile-menu-nav">
+      <a href="/about/">關於我們</a>
+      <a href="/programs/">課程方案</a>
+      <a href="/instructors/">講師陣容</a>
+      <a href="/testimonials/">學員心得</a>
+      <a href="/blog/">部落格</a>
+      <a href="/partners/">合作夥伴</a>
+    </nav>
+    <div class="mobile-menu-cta">
+      <a href="/contact/" class="btn-p" style="width:100%;justify-content:center;">聯絡我們</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var toggle = document.getElementById('nav-toggle');
+  var menu   = document.getElementById('mobile-menu');
+  var close  = document.getElementById('nav-close');
+  function openMenu()  { menu.classList.add('open');    document.body.style.overflow='hidden'; }
+  function closeMenu() { menu.classList.remove('open'); document.body.style.overflow=''; }
+  toggle.addEventListener('click', openMenu);
+  close.addEventListener('click', closeMenu);
+  menu.addEventListener('click', function(e){ if(e.target===menu) closeMenu(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMenu(); });
+})();
+</script>
 
 <!-- ARTICLE HERO -->
 <div class="page-header">
@@ -263,5 +294,6 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
+
 
 

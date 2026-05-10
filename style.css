@@ -216,12 +216,104 @@ body {
   [style*="grid-template-columns:2fr 1fr 1fr"]   { grid-template-columns: 1fr 1fr !important; }
 }
 
+/* ── Mobile hamburger button ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1A1814;
+  border-radius: 2px;
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+/* ── Mobile menu overlay ── */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(26,24,20,0.48);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mobile-menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78vw;
+  max-width: 300px;
+  height: 100%;
+  background: #fff;
+  padding: 1.5rem 1.75rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.32,0,0.08,1);
+  box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+}
+.mobile-menu-overlay.open .mobile-menu-drawer {
+  transform: translateX(0);
+}
+.mobile-menu-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #8E8070;
+  padding: 4px 2px;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.mobile-menu-nav a {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: .97rem;
+  color: #1A1814;
+  text-decoration: none;
+  padding: .9rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-weight: 400;
+  letter-spacing: .02em;
+  transition: color 0.2s;
+}
+.mobile-menu-nav a:first-child { border-top: 1px solid rgba(0,0,0,0.06); }
+.mobile-menu-nav a:hover,
+.mobile-menu-nav a.active { color: #C07868; }
+.mobile-menu-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
 @media (max-width: 640px) {
   .container { padding: 0 1.25rem; }
   .section   { padding: 3.5rem 0; }
 
   /* ── Nav ── */
   .nav-desktop { display: none !important; }
+  .nav-hamburger { display: flex !important; }
 
   /* ── Hero ── */
   .hero-grid { grid-template-columns: 1fr !important; }
