@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -246,6 +246,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  overflow: hidden;
 }
 .mobile-menu-overlay.open {
   opacity: 1;
@@ -329,7 +330,12 @@ body {
 
   /* ── Content grids → 1 col ── */
   [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
   [style*="grid-template-columns:repeat(5,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
+
+  /* ── 2-col grids → 1 col ── */
+  [style*="grid-template-columns:repeat(2,1fr)"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
 
   /* ── Footer & CTA grids → 1 col ── */
   [style*="grid-template-columns:2fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
