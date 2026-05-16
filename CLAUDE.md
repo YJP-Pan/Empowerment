@@ -1,54 +1,94 @@
-# CLAUDE.md — Frontend Website Rules
+# CLAUDE.md — Herway Frontend Project
 
-## Always Do First
+## 0. Always Do First
 - **Invoke the `frontend-design` skill** before writing any frontend code, every session, no exceptions.
 
-## Reference Images
-- If a reference image is provided: match layout, spacing, typography, and color exactly. Swap in placeholder content (images via `https://placehold.co/`, generic copy). Do not improve or add to the design.
-- If no reference image: design from scratch with high craft (see guardrails below).
-- Screenshot your output, compare against reference, fix mismatches, re-screenshot. Do at least 2 comparison rounds. Stop only when no visible differences remain or user says so.
+---
 
-## Local Server
+## 1. Think Before Coding
+
+**Don't assume. Don't hide confusion. Surface tradeoffs.**
+
+Before implementing:
+- State your assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+## 2. Simplicity First
+
+**Minimum code that solves the problem. Nothing speculative.**
+
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+
+## 3. Surgical Changes
+
+**Touch only what you must. Clean up only your own mess.**
+
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- Remove imports/variables/functions that YOUR changes made unused.
+
+## 4. Goal-Driven Execution
+
+**Define success criteria. Loop until verified.**
+
+For multi-step tasks, state a brief plan before starting:
+```
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+```
+
+---
+
+## 5. Local Server & Screenshots
+
 - **Always serve on localhost** — never screenshot a `file:///` URL.
-- Start the dev server: `node serve.mjs` (serves the project root at `http://localhost:3000`)
-- `serve.mjs` lives in the project root. Start it in the background before taking any screenshots.
+- Start the dev server: `node serve.mjs` (serves root at `http://localhost:3000`)
 - If the server is already running, do not start a second instance.
+- **Puppeteer** is at `C:/Program Files/Google/Chrome/Application/chrome.exe`
+- Screenshots save to `./temporary screenshots/screenshot-N.png`
+- Use `node screenshot.mjs http://localhost:3000` for full-page desktop screenshots.
+- For mobile, use a custom Puppeteer script with `setViewport({ width: 375, height: 812 })`.
+- After screenshotting, read the PNG with the Read tool and analyze visually.
 
-## Screenshot Workflow
-- Puppeteer is installed at `C:/Users/nateh/AppData/Local/Temp/puppeteer-test/`. Chrome cache is at `C:/Users/nateh/.cache/puppeteer/`.
-- **Always screenshot from localhost:** `node screenshot.mjs http://localhost:3000`
-- Screenshots are saved automatically to `./temporary screenshots/screenshot-N.png` (auto-incremented, never overwritten).
-- Optional label suffix: `node screenshot.mjs http://localhost:3000 label` → saves as `screenshot-N-label.png`
-- `screenshot.mjs` lives in the project root. Use it as-is.
-- After screenshotting, read the PNG from `temporary screenshots/` with the Read tool — Claude can see and analyze the image directly.
-- When comparing, be specific: "heading is 32px but reference shows ~24px", "card gap is 16px but should be 24px"
-- Check: spacing/padding, font size/weight/line-height, colors (exact hex), alignment, border-radius, shadows, image sizing
+## 6. Reference Images
 
-## Output Defaults
-- Single `index.html` file, all styles inline, unless user says otherwise
+- If a reference image is provided: match layout, spacing, typography, and color exactly.
+- Do at least 2 screenshot comparison rounds. Stop only when no visible differences remain.
+- Do not improve or add to the design — match it.
+
+## 7. Output Defaults
+
+- Single `index.html` per page, all styles inline, unless user says otherwise.
 - Tailwind CSS via CDN: `<script src="https://cdn.tailwindcss.com"></script>`
 - Placeholder images: `https://placehold.co/WIDTHxHEIGHT`
-- Mobile-first responsive
+- Mobile-first responsive. Always verify RWD with a mobile screenshot.
+- Domain: `superstar.tw`
 
-## Brand Assets
-- Always check the `brand_assets/` folder before designing. It may contain logos, color guides, style guides, or images.
-- If assets exist there, use them. Do not use placeholders where real assets are available.
-- If a logo is present, use it. If a color palette is defined, use those exact values — do not invent brand colors.
+## 8. Brand Assets
 
-## Anti-Generic Guardrails
-- **Colors:** Never use default Tailwind palette (indigo-500, blue-600, etc.). Pick a custom brand color and derive from it.
-- **Shadows:** Never use flat `shadow-md`. Use layered, color-tinted shadows with low opacity.
-- **Typography:** Never use the same font for headings and body. Pair a display/serif with a clean sans. Apply tight tracking (`-0.03em`) on large headings, generous line-height (`1.7`) on body.
-- **Gradients:** Layer multiple radial gradients. Add grain/texture via SVG noise filter for depth.
-- **Animations:** Only animate `transform` and `opacity`. Never `transition-all`. Use spring-style easing.
-- **Interactive states:** Every clickable element needs hover, focus-visible, and active states. No exceptions.
-- **Images:** Add a gradient overlay (`bg-gradient-to-t from-black/60`) and a color treatment layer with `mix-blend-multiply`.
-- **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
-- **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
+- Always check `brand_assets/` before designing — logos, color guides, images.
+- Use real assets; no placeholders where real assets exist.
+- Primary brand color: `#C07868` (coral). Background: `#FEFCFB`. Body text: `#1A1814`.
 
-## Hard Rules
-- Do not add sections, features, or content not in the reference
-- Do not "improve" a reference design — match it
-- Do not stop after one screenshot pass
-- Do not use `transition-all`
-- Do not use default Tailwind blue/indigo as primary color
+## 9. Anti-Generic Guardrails
+
+- **Colors:** Never default Tailwind palette (indigo-500, blue-600). Use `#C07868` and derivatives.
+- **Shadows:** Layered, color-tinted with low opacity — not flat `shadow-md`.
+- **Typography:** Cormorant Garamond for headings, Noto Sans TC for body. Tight tracking on large headings.
+- **Animations:** Only animate `transform` and `opacity`. Never `transition-all`.
+- **Interactive states:** Every clickable element needs hover, focus-visible, and active states.
+- **Spacing:** Consistent spacing tokens — not random Tailwind steps.
+
+## 10. Hard Rules
+
+- Do not add sections, features, or content not in the reference or request.
+- Do not use `transition-all`.
+- Do not use default Tailwind blue/indigo as primary color.
+- Do not stop after one screenshot pass when a reference image is provided.
+- Unsplash image IDs must be verified via WebFetch — never hallucinated.
