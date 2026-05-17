@@ -2,29 +2,100 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/brand_assets/Herway_logo.png">
+  <link rel="icon" type="image/png" href="/brand_assets/Herway_logo.png">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EESCNFJD9"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6EESCNFJD9');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Herwayへのお問い合わせ — コース相談、パートナーシップ提案、受講生サポートなど、お気軽にご連絡ください。">
+<meta name="description" content="Herwayチームへのお問い合わせ。コース相談、コラボ提案、その他なんでもお気軽にどうぞ。">
+<meta name="keywords" content="女性起業, ブランド戦略, お問い合わせ, コース相談, Herway">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://superstar.tw/ja/contact/">
-<title>お問い合わせ | Herway</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Herway">
+<meta property="og:title" content="お問い合わせ｜Herway">
+<meta property="og:description" content="Herwayチームへのお問い合わせ。コース相談、コラボ提案、その他なんでもお気軽にどうぞ。">
+<meta property="og:url" content="https://superstar.tw/ja/contact/">
+<meta property="og:image" content="https://superstar.tw/brand_assets/hero_img_2.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="お問い合わせ｜Herway">
+<meta name="twitter:description" content="Herwayチームへのお問い合わせ。コース相談、コラボ提案、その他なんでもお気軽にどうぞ。">
+<meta name="twitter:image" content="https://superstar.tw/brand_assets/hero_img_2.png">
+<title>お問い合わせ｜Herway</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<style>
+.form-group { display: flex; flex-direction: column; gap: .5rem; }
+.form-label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .78rem; font-weight: 500;
+  color: #3A3428; letter-spacing: .02em;
+}
+.form-input {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .9rem; font-weight: 300;
+  color: #1A1814;
+  background: rgba(255,255,255,0.85);
+  border: 1.5px solid rgba(192,120,104,0.20);
+  border-radius: .75rem;
+  padding: .85rem 1.1rem;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+  width: 100%;
+}
+.form-input:focus {
+  border-color: #C07868;
+  box-shadow: 0 0 0 3px rgba(192,120,104,0.12);
+  background: #fff;
+}
+.form-input::placeholder { color: #B5A898; }
+textarea.form-input { resize: vertical; min-height: 140px; }
+select.form-input { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23B07868' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; cursor: pointer; }
+.submit-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: #C07868; color: #fff;
+  padding: 1rem 2.5rem; border-radius: 3rem;
+  font-family: 'Noto Sans JP', sans-serif; font-weight: 500; font-size: .92rem;
+  letter-spacing: .025em; border: none; cursor: pointer; width: 100%;
+  transition: background .25s cubic-bezier(.22,1,.36,1), transform .2s, box-shadow .25s;
+  box-shadow: 0 4px 18px -2px rgba(192,120,104,.38);
+}
+.submit-btn:hover { background: #A06050; transform: translateY(-2px); box-shadow: 0 10px 28px -4px rgba(192,120,104,.48); }
+.submit-btn:active { transform: translateY(0); }
+.submit-btn:focus-visible { outline: 2px solid #C07868; outline-offset: 3px; }
+</style>
 </head>
 <body>
+
 <!-- NAV -->
 <nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;border-bottom:1px solid rgba(0,0,0,0.07);box-shadow:0 1px 12px rgba(0,0,0,0.05);">
   <div class="container" style="height:64px;display:flex;align-items:center;justify-content:space-between;">
-    <a href="/ja/" style="display:flex;align-items:center;gap:10px;text-decoration:none;"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/><path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/><path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.40"/><line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/></svg><span style="font-family:'Josefin Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.32em;color:#C07868;text-transform:uppercase;">Herway</span></a>
-    <div class="nav-desktop" style="display:flex;align-items:center;gap:2rem;"><a href="/ja/about/" class="nav-link">私たちについて</a><a href="/ja/programs/" class="nav-link">プログラム</a><a href="/ja/instructors/" class="nav-link">講師紹介</a><a href="/ja/testimonials/" class="nav-link">受講生の声</a><a href="/ja/blog/" class="nav-link">ブログ</a><a href="/ja/partners/" class="nav-link">パートナー</a></div>
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/>
+        <path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/>
+        <path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.40"/>
+        <line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/>
+      </svg>
+      <span style="font-family:'Josefin Sans',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.32em;color:#C07868;text-transform:uppercase;">Herway</span>
+    </a>
+    <div class="nav-desktop" style="display:flex;align-items:center;gap:2rem;">
+      <a href="/ja/about/"        class="nav-link">私たちについて</a>
+      <a href="/ja/programs/"     class="nav-link">プログラム</a>
+      <a href="/ja/instructors/"  class="nav-link">講師紹介</a>
+      <a href="/ja/testimonials/" class="nav-link">受講生の声</a>
+      <a href="/ja/blog/"         class="nav-link">ブログ</a>
+      <a href="/ja/partners/"     class="nav-link">パートナー</a>
+    </div>
     <div style="display:flex;align-items:center;gap:1.5rem;">
       <a href="#" class="nav-link" style="font-size:.82rem;">ログイン</a>
-      <a href="/ja/#join" class="btn-p" style="padding:.6rem 1.5rem;font-size:.82rem;">今すぐ参加 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="/ja/#join" class="btn-p" style="padding:.6rem 1.5rem;font-size:.82rem;">
+        今すぐ参加
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
       <div style="display:flex;align-items:center;gap:.25rem;border:1px solid rgba(192,120,104,0.25);border-radius:20px;padding:3px 8px;">
         <a href="/contact/" style="font-family:'Josefin Sans',sans-serif;font-size:.65rem;letter-spacing:.08em;color:#8E8070;text-decoration:none;padding:2px 5px;">ZH</a>
         <span style="color:rgba(192,120,104,0.3);font-size:.6rem;">|</span>
@@ -36,94 +107,214 @@
     </div>
   </div>
 </nav>
-<div id="mobile-menu" class="mobile-menu-overlay" role="dialog" aria-modal="true"><div class="mobile-menu-drawer"><button class="mobile-menu-close" id="nav-close">&#x2715;</button><nav class="mobile-menu-nav"><a href="/ja/about/">私たちについて</a><a href="/ja/programs/">プログラム</a><a href="/ja/instructors/">講師紹介</a><a href="/ja/testimonials/">受講生の声</a><a href="/ja/blog/">ブログ</a><a href="/ja/partners/">パートナー</a></nav><div class="mobile-menu-cta"><a href="/ja/contact/" class="btn-p" style="width:100%;justify-content:center;">お問い合わせ</a></div></div></div>
-<script>(function(){var t=document.getElementById('nav-toggle'),m=document.getElementById('mobile-menu'),c=document.getElementById('nav-close');function o(){m.classList.add('open');document.body.style.overflow='hidden';}function cl(){m.classList.remove('open');document.body.style.overflow='';}t.addEventListener('click',o);c.addEventListener('click',cl);m.addEventListener('click',function(e){if(e.target===m)cl();});document.addEventListener('keydown',function(e){if(e.key==='Escape')cl();});})();</script>
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="モバイルメニュー">
+  <div class="mobile-menu-drawer">
+    <button class="mobile-menu-close" id="nav-close" aria-label="メニューを閉じる">&#x2715;</button>
+    <nav class="mobile-menu-nav">
+      <a href="/ja/about/">私たちについて</a>
+      <a href="/ja/programs/">プログラム</a>
+      <a href="/ja/instructors/">講師紹介</a>
+      <a href="/ja/testimonials/">受講生の声</a>
+      <a href="/ja/blog/">ブログ</a>
+      <a href="/ja/partners/">パートナー</a>
+    </nav>
+    <div class="mobile-menu-cta">
+      <a href="/ja/contact/" class="btn-p" style="width:100%;justify-content:center;">お問い合わせ</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var toggle = document.getElementById('nav-toggle');
+  var menu   = document.getElementById('mobile-menu');
+  var close  = document.getElementById('nav-close');
+  function openMenu()  { menu.classList.add('open');    document.body.style.overflow='hidden'; }
+  function closeMenu() { menu.classList.remove('open'); document.body.style.overflow=''; }
+  toggle.addEventListener('click', openMenu);
+  close.addEventListener('click', closeMenu);
+  menu.addEventListener('click', function(e){ if(e.target===menu) closeMenu(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMenu(); });
+})();
+</script>
 
 <!-- PAGE HEADER -->
 <div class="page-header">
   <div class="page-hero">
     <div class="gblob gb6" style="width:350px;height:350px;top:-20%;right:5%;background:rgba(200,120,100,0.14);"></div>
     <div class="container" style="position:relative;z-index:1;">
-      <div style="font-family:'Josefin Sans',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">ご連絡ください</div>
+      <div style="font-family:'Noto Sans JP',sans-serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#B07868;margin-bottom:1rem;">Contact Us</div>
       <div class="divider" style="margin-bottom:1.5rem;"></div>
       <h1 class="hd" style="font-size:clamp(2.5rem,5vw,4rem);color:#1A1814;margin-bottom:1rem;">お問い合わせ</h1>
-      <p style="font-family:'Noto Sans JP',sans-serif;font-size:.97rem;font-weight:300;color:#6B6050;max-width:34rem;line-height:1.85;">どんなご質問でもお気軽にどうぞ。できる限り早くご返答いたします。</p>
+      <p style="font-family:'Noto Sans JP',sans-serif;font-size:.97rem;font-weight:300;color:#6B6050;max-width:34rem;line-height:1.85;">
+        コース相談、コラボ提案、その他なんでもお気軽にどうぞ。<br>できる限り早くご返信いたします。
+      </p>
     </div>
   </div>
 </div>
 
-<!-- CONTACT -->
+<!-- CONTACT SECTION -->
 <section class="section" style="background:#FEFCFB;">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:start;">
+    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:start;max-width:960px;margin:0 auto;">
+
+      <!-- Left: info cards -->
       <div>
-        <div class="reveal card" style="padding:2rem;border-radius:1.5rem;margin-bottom:1.5rem;">
-          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.75rem;">
-            <div style="width:40px;height:40px;background:rgba(192,120,104,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C07868" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><div style="font-family:'Josefin Sans',sans-serif;font-size:.75rem;letter-spacing:.08em;color:#B07868;text-transform:uppercase;margin-bottom:.2rem;">メール</div><div style="font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;">support@hexionnetworks.com</div></div>
+        <div style="display:flex;flex-direction:column;gap:1.5rem;">
+
+          <div class="reveal card" style="border-radius:1.25rem;padding:1.5rem 1.75rem;display:flex;align-items:flex-start;gap:1rem;">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:rgba(192,120,104,0.12);display:flex;align-items:center;justify-content:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#C07868" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke="#C07868" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.75rem;font-weight:500;color:#1A1814;margin-bottom:.25rem;">メール</div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;">support@hexionnetworks.com</div>
+            </div>
           </div>
-        </div>
-        <div class="reveal r1 card" style="padding:2rem;border-radius:1.5rem;margin-bottom:1.5rem;">
-          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.75rem;">
-            <div style="width:40px;height:40px;background:rgba(192,120,104,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C07868" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-            <div><div style="font-family:'Josefin Sans',sans-serif;font-size:.75rem;letter-spacing:.08em;color:#B07868;text-transform:uppercase;margin-bottom:.2rem;">対応時間</div><div style="font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;">月〜金 10:00〜18:00</div></div>
+
+          <div class="reveal r1 card" style="border-radius:1.25rem;padding:1.5rem 1.75rem;display:flex;align-items:flex-start;gap:1rem;">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:rgba(192,120,104,0.12);display:flex;align-items:center;justify-content:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C07868" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke="#C07868" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.75rem;font-weight:500;color:#1A1814;margin-bottom:.25rem;">対応時間</div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;">月〜金<br>午前 9:00 — 午後 6:00</div>
+            </div>
           </div>
-        </div>
-        <div class="reveal r2 card" style="padding:2rem;border-radius:1.5rem;">
-          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.75rem;">
-            <div style="width:40px;height:40px;background:rgba(192,120,104,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C07868" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <div><div style="font-family:'Josefin Sans',sans-serif;font-size:.75rem;letter-spacing:.08em;color:#B07868;text-transform:uppercase;margin-bottom:.2rem;">返信速度</div><div style="font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;">通常1〜2営業日以内</div></div>
+
+          <div class="reveal r2 card" style="border-radius:1.25rem;padding:1.5rem 1.75rem;display:flex;align-items:flex-start;gap:1rem;">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:rgba(192,120,104,0.12);display:flex;align-items:center;justify-content:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#C07868" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.75rem;font-weight:500;color:#1A1814;margin-bottom:.25rem;">返信速度</div>
+              <div style="font-family:'Noto Sans JP',sans-serif;font-size:.85rem;font-weight:300;color:#6B6050;">通常1〜2営業日以内</div>
+            </div>
           </div>
+
         </div>
       </div>
 
+      <!-- Right: form -->
       <div class="reveal r1">
-        <form action="https://formsubmit.co/support@hexionnetworks.com" method="POST" style="display:flex;flex-direction:column;gap:1.25rem;">
-          <input type="hidden" name="_next" value="/ja/contact/?sent=1">
-          <input type="hidden" name="_captcha" value="false">
-          <div>
-            <label style="display:block;font-family:'Noto Sans JP',sans-serif;font-size:.8rem;color:#6B6050;margin-bottom:.5rem;">お名前</label>
-            <input type="text" name="name" required placeholder="山田 花子" style="width:100%;padding:.875rem 1rem;border:1px solid rgba(192,120,104,0.2);border-radius:.75rem;font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;background:#fff;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#C07868'" onblur="this.style.borderColor='rgba(192,120,104,0.2)'">
-          </div>
-          <div>
-            <label style="display:block;font-family:'Noto Sans JP',sans-serif;font-size:.8rem;color:#6B6050;margin-bottom:.5rem;">メールアドレス</label>
-            <input type="email" name="email" required placeholder="hanako@example.com" style="width:100%;padding:.875rem 1rem;border:1px solid rgba(192,120,104,0.2);border-radius:.75rem;font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;background:#fff;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#C07868'" onblur="this.style.borderColor='rgba(192,120,104,0.2)'">
-          </div>
-          <div>
-            <label style="display:block;font-family:'Noto Sans JP',sans-serif;font-size:.8rem;color:#6B6050;margin-bottom:.5rem;">お問い合わせ内容</label>
-            <select name="topic" required style="width:100%;padding:.875rem 1rem;border:1px solid rgba(192,120,104,0.2);border-radius:.75rem;font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;background:#fff;outline:none;transition:border-color .2s;appearance:none;" onfocus="this.style.borderColor='#C07868'" onblur="this.style.borderColor='rgba(192,120,104,0.2)'">
-              <option value="" disabled selected>カテゴリを選択</option>
-              <option value="course">コース相談</option>
-              <option value="partnership">パートナーシップ提案</option>
-              <option value="support">受講生サポート</option>
-              <option value="media">取材・メディア</option>
-              <option value="other">その他</option>
-            </select>
-          </div>
-          <div>
-            <label style="display:block;font-family:'Noto Sans JP',sans-serif;font-size:.8rem;color:#6B6050;margin-bottom:.5rem;">メッセージ</label>
-            <textarea name="message" required rows="5" placeholder="お問い合わせ内容をご記入ください..." style="width:100%;padding:.875rem 1rem;border:1px solid rgba(192,120,104,0.2);border-radius:.75rem;font-family:'Noto Sans JP',sans-serif;font-size:.9rem;color:#1A1814;background:#fff;outline:none;transition:border-color .2s;resize:vertical;" onfocus="this.style.borderColor='#C07868'" onblur="this.style.borderColor='rgba(192,120,104,0.2)'"></textarea>
-          </div>
-          <button type="submit" class="btn-p" style="align-self:flex-start;">送信する <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        </form>
+        <div class="card" style="border-radius:1.75rem;padding:2.5rem;">
+
+          <form action="https://formsubmit.co/support@hexionnetworks.com" method="POST" style="display:flex;flex-direction:column;gap:1.25rem;">
+
+            <input type="hidden" name="_subject" value="Herway ウェブサイトからのお問い合わせ">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://superstar.tw/ja/contact/?sent=1">
+            <input type="text" name="_honey" style="display:none">
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="name">お名前 <span style="color:#C07868;">*</span></label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="山田花子" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">メールアドレス <span style="color:#C07868;">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="example@mail.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="topic">お問い合わせ内容 <span style="color:#C07868;">*</span></label>
+              <select class="form-input" id="topic" name="topic" required>
+                <option value="" disabled selected>カテゴリを選択</option>
+                <option value="コース相談">コース相談</option>
+                <option value="コラボ提案">コラボ提案</option>
+                <option value="受講生サポート">受講生サポート</option>
+                <option value="メディア取材">メディア取材</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">メッセージ <span style="color:#C07868;">*</span></label>
+              <textarea class="form-input" id="message" name="message" placeholder="お知りになりたいことをお書きください……" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              送信する
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M5.5 2L10 6l-4.5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <p style="font-family:'Noto Sans JP',sans-serif;font-size:.72rem;font-weight:300;color:#B5A898;text-align:center;line-height:1.6;">
+              送信することで、プライバシーポリシーに同意したものとみなします。第三者にあなたの情報を共有することはありません。
+            </p>
+
+          </form>
+
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- SUCCESS MESSAGE -->
+<script>
+if (new URLSearchParams(location.search).get('sent') === '1') {
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.createElement('div');
+    banner.innerHTML = `
+      <div style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);z-index:100;background:#1A1814;color:#fff;font-family:'Noto Sans JP',sans-serif;font-size:.88rem;padding:.9rem 2rem;border-radius:3rem;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;align-items:center;gap:.75rem;">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#C07868" stroke-width="1.5"/><path d="M5.5 9l2.5 2.5L12.5 6" stroke="#C07868" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        メッセージを送信しました！できる限り早くご返信いたします。
+      </div>`;
+    document.body.appendChild(banner);
+    setTimeout(() => banner.remove(), 5000);
+  });
+}
+</script>
+
 <!-- FOOTER -->
-<footer style="background:#fff;font-family:'Josefin Sans',sans-serif;border-top:1px solid rgba(192,120,104,0.12);">
+<footer style="background:#fff;font-family:'Noto Sans JP',sans-serif;border-top:1px solid rgba(192,120,104,0.12);">
   <div class="container" style="padding-top:5rem;padding-bottom:2.5rem;">
     <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:4rem;">
-      <div><div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;"><svg width="30" height="30" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/><path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/><path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.38"/><line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/></svg><span style="font-family:'Josefin Sans',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.32em;color:#C07868;text-transform:uppercase;">Herway</span></div><p style="font-family:'Noto Sans JP',sans-serif;font-size:.875rem;font-weight:300;color:#6B6050;line-height:1.85;max-width:22rem;">ブランド・コンテンツ・ビジネスを統合し、女性が自分の市場と価値を創造する学習コミュニティ。</p></div>
-      <div><h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">プログラム</h5><ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-family:'Noto Sans JP',sans-serif;font-size:.855rem;font-weight:300;"><li><a href="/ja/programs/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">すべてのプログラム</a></li></ul></div>
-      <div><h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">サービス情報</h5><ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-family:'Noto Sans JP',sans-serif;font-size:.855rem;font-weight:300;"><li><a href="/ja/about/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">ブランドストーリー</a></li><li><a href="/ja/partners/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">パートナー</a></li><li><a href="/ja/contact/" style="color:#C07868;text-decoration:none;">お問い合わせ</a></li></ul></div>
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14.5" stroke="#C07868" stroke-width="1.4" fill="rgba(192,120,104,0.08)"/>
+            <path d="M16 6.5L21 13H11L16 6.5Z" fill="#C07868" opacity="0.88"/>
+            <path d="M11 13L16 25.5L21 13H11Z" fill="#C07868" opacity="0.38"/>
+            <line x1="11" y1="13" x2="21" y2="13" stroke="white" stroke-width="0.8" opacity="0.6"/>
+          </svg>
+          <span style="font-family:'Josefin Sans',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.32em;color:#C07868;text-transform:uppercase;">Herway</span>
+        </div>
+        <p style="font-size:.875rem;font-weight:300;color:#6B6050;line-height:1.85;max-width:22rem;">ブランド・コンテンツ・ビジネスを統合し、女性が自分の市場と価値を創造するための学習コミュニティ。</p>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">プログラム・サービス</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-size:.855rem;font-weight:300;">
+          <li><a href="/ja/programs/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">すべてのプログラム</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">ワークショップ</a></li>
+          <li><a href="#" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">1対1コンサルティング</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;font-weight:500;letter-spacing:.08em;color:#1A1814;margin-bottom:1.5rem;text-transform:uppercase;">私たちについて</h5>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;font-size:.855rem;font-weight:300;">
+          <li><a href="/ja/about/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">ブランドストーリー</a></li>
+          <li><a href="/ja/blog/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">ブログ</a></li>
+          <li><a href="/ja/partners/" style="color:#6B6050;text-decoration:none;" onmouseover="this.style.color='#C07868'" onmouseout="this.style.color='#6B6050'">パートナー</a></li>
+          <li><a href="/ja/contact/" style="color:#C07868;text-decoration:none;" onmouseover="this.style.color='#A06050'" onmouseout="this.style.color='#C07868'">お問い合わせ</a></li>
+        </ul>
+      </div>
     </div>
     <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(192,120,104,0.20),transparent);margin-bottom:2rem;"></div>
-    <p style="font-size:.77rem;font-weight:300;color:#8E8070;">© 2025 Herway. All rights reserved.</p>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;font-size:.77rem;font-weight:300;color:#8E8070;">
+      <p>© 2025 Herway. All rights reserved.</p>
+    </div>
   </div>
 </footer>
-<script>const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.08,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));</script>
-<a href="https://line.me/R/ti/p/@846uynnf" target="_blank" rel="noopener" aria-label="LINE" style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:150;width:54px;height:54px;border-radius:50%;background:#06C755;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(6,199,85,0.38);transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.494.25l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></a>
+
+<script>
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+<a href="https://line.me/R/ti/p/@846uynnf" target="_blank" rel="noopener" aria-label="LINEで連絡" style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:150;width:54px;height:54px;border-radius:50%;background:#06C755;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(6,199,85,0.38);transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 24px rgba(6,199,85,0.5)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 18px rgba(6,199,85,0.38)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.494.25l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+</a>
 </body>
 </html>
